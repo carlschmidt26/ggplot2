@@ -700,6 +700,7 @@ ScaleContinuous <- ggproto("ScaleContinuous", Scale,
     }
 
     if (length(labels) != length(breaks)) {
+      print(breaks)
       print(labels)
       abort("Breaks and labels are lengths")
     }
