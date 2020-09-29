@@ -700,7 +700,7 @@ ScaleContinuous <- ggproto("ScaleContinuous", Scale,
     }
 
     if (length(labels) != length(breaks)) {
-      abort("Breaks and labels are different lengths")
+      abort("Breaks and labels are lengths")
     }
     if (is.list(labels)) {
       # Guard against list with empty elements
@@ -1101,7 +1101,7 @@ ScaleBinned <- ggproto("ScaleBinned", Scale,
       labels <- self$labels
     }
     if (length(labels) != length(breaks)) {
-      abort("Breaks and labels are different lengths")
+      abort("Breaks and labels different lengths")
     }
     labels
   },
